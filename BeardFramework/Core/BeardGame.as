@@ -4,7 +4,7 @@ package Core
 	
 	/**
 	 * ...
-	 * @author Ludo
+	 * @author Ludovic Geraert
 	 */
 	public class BeardGame extends Sprite 
 	{
