@@ -1,4 +1,4 @@
-package Resources.Assets 
+package BeardFramework.Resources.Assets 
 {
 	import com.greensock.loading.ImageLoader;
 	import com.greensock.loading.LoaderMax;
@@ -60,88 +60,86 @@ package Resources.Assets
 		}
 		
 		
-		public static function append(type:uint, url:String = "", name:String = "", params:Object = null):void
+		public static function append(type:uint, url:String = "", params:Object = null):void
 		{
-			var loaderClass:Class;
-			switch(type)
-			{
-				case LOADER_TYPE_IMAGE : loaderClass = ImageLoader
-			}
-			var loaderParams:Object = params ? params : {};
-			if (name != "")
-				loaderParams[StringsList.NAME] = name;
-			_instance._loader.append(new loaderClass(url, loaderParams));
-		
+			//var loaderClass:Class;
+			//switch(type)
+			//{
+				//case LOADER_TYPE_IMAGE : _instance._loader.append(new ImageLoader(url, params ? params : {}));
+			//}
+			//
+			//_instance._loader.append(new loaderClass(url, loaderParams));
+		//
 		}
 		
 		public static function removeLoader(name:String = ""):void
 		{
-			resourcesLoader.remove(resourcesLoader.getLoader(name));
+			//resourcesLoader.remove(resourcesLoader.getLoader(name));
 		}
 		
 		public static function load(onComplete:Array = null, onProgress:Array = null, onError:Array = null):void
 		{
 			
-			if (onComplete != null)
-				onCompleteCallbacks = Vector.<Function>(onComplete);
-			else
-				onCompleteCallbacks = new Vector.<Function>();
-			
-			if (onProgress != null)
-				onProgressCallbacks = Vector.<Function>(onProgress);
-			else
-				onProgressCallbacks = new Vector.<Function>();
-			
-			if (onError != null)
-				onErrorCallbacks = Vector.<Function>(onError);
-			else
-				onErrorCallbacks = new Vector.<Function>();
-			
-				
-			resourcesLoader.load();
+			//if (onComplete != null)
+				//onCompleteCallbacks = Vector.<Function>(onComplete);
+			//else
+				//onCompleteCallbacks = new Vector.<Function>();
+			//
+			//if (onProgress != null)
+				//onProgressCallbacks = Vector.<Function>(onProgress);
+			//else
+				//onProgressCallbacks = new Vector.<Function>();
+			//
+			//if (onError != null)
+				//onErrorCallbacks = Vector.<Function>(onError);
+			//else
+				//onErrorCallbacks = new Vector.<Function>();
+			//
+				//
+			//resourcesLoader.load();
 		
 		}
 		
 		private static function onLoadingComplete(e:LoaderEvent = null):void
 		{
-			trace("completed");
-			
-			for each (var callback:Function in onCompleteCallbacks)
-			{
-				callback.apply(null, [e]);
-			}
-			createAtlases(null);
-			_atlasesCount = 0;
-			resourcesLoader.empty(true, true);
+			//trace("completed");
+			//
+			//for each (var callback:Function in onCompleteCallbacks)
+			//{
+				//callback.apply(null, [e]);
+			//}
+			//createAtlases(null);
+			//_atlasesCount = 0;
+			//resourcesLoader.empty(true, true);
 		}
 		
 		private static function onLoadingProgress(e:LoaderEvent = null):void
 		{
 			
 			
-			for each (var callback:Function in onProgressCallbacks)
-			{
-				callback.apply(null, [e]);
-			}
-		
+			//for each (var callback:Function in onProgressCallbacks)
+			//{
+				//callback.apply(null, [e]);
+			//}
+		//
 		}
 		
 		private static function onLoadingError(e:LoaderEvent = null):void
 		{
 			
-			resourcesLoader.pause();
-			for each (var callback:Function in onErrorCallbacks)
-			{
-				callback.apply(null, [e]);
-			}
+			//resourcesLoader.pause();
+			//for each (var callback:Function in onErrorCallbacks)
+			//{
+				//callback.apply(null, [e]);
+			//}
 		}
 		
 		public static function set empty(value:Boolean):void
 		{
-			if (value)
-			{
-				resourcesLoader.empty(true, true);
-			}
+			//if (value)
+			//{
+				//resourcesLoader.empty(true, true);
+			//}
 		}
 		
 	}

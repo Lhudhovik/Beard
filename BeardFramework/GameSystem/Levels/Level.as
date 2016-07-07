@@ -1,4 +1,4 @@
-package GameSystem.Level 
+package BeardFramework.GameSystem.Levels 
 {
 	/**
 	 * ...

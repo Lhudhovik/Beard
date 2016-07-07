@@ -1,9 +1,10 @@
-package Core.System 
+package BeardFramework.Core.System 
 {
 	/**
 	 * ...
 	 * @author Ludo
 	 */
+	
 	public class SaveManager 
 	{
 		

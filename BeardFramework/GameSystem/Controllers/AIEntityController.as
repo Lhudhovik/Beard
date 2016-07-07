@@ -1,4 +1,4 @@
-package GameSystem.Controllers 
+package BeardFramework.GameSystem.Controllers 
 {
 	/**
 	 * ...

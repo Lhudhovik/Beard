@@ -1,4 +1,4 @@
-package Core 
+package BeardFramework.Core 
 {
 	import starling.display.Sprite;
 	

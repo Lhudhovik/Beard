@@ -1,4 +1,4 @@
-package DisplaySystem.Camera 
+package BeardFramework.DisplaySystem.Cameras 
 {
 	/**
 	 * ...

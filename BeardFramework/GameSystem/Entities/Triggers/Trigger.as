@@ -1,4 +1,4 @@
-package GameSystem.Entities.Triggers 
+package BeardFramework.GameSystem.Entities.Triggers 
 {
 	/**
 	 * ...

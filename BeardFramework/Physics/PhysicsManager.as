@@ -1,4 +1,4 @@
-package Physics 
+package BeardFramework.Physics 
 {
 	import Box2D.Dynamics.b2Body;
 	import Box2D.Dynamics.b2World;

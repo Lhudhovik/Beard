@@ -1,4 +1,4 @@
-package GameSystem.AI 
+package BeardFramework.GameSystem.AI 
 {
 	/**
 	 * ...
