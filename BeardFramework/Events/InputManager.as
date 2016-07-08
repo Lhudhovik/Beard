@@ -1,6 +1,6 @@
 package BeardFramework.Events 
 {
-	import addons.ConnexionBrokenManager;
+	
 	import flash.events.Event;
 	import flash.events.KeyboardEvent;
 	import flash.events.MouseEvent;
